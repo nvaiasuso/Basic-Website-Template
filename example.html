@@ -10,32 +10,5 @@
   <h1>this is somerandom ezample page thing</h1>
   <p><a href="index.html">Back to home</a></p>
 
- //some random lisiner thing
-  <script>
-    (function() {
-        let aCount = 0;
-        const targetKey = 'a'; // The key to look for (case-insensitive)
-        const requiredPresses = 5;
-        
-        // REPLACE THIS URL with the actual link to your GitHub pages or raw file
-        const redirectUrl = "https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/what.html";
-
-        window.addEventListener('keydown', function(event) {
-            // Check if the pressed key is 'a' or 'A'
-            if (event.key.toLowerCase() === targetKey) {
-                aCount++;
-                
-                // If it hits 5, trigger the redirect
-                if (aCount >= requiredPresses) {
-                    window.location.href = redirectUrl;
-                }
-            } else {
-                // Reset the count if they press any other key 
-                aCount = 0; 
-            }
-        });
-    })();
-  </script>
-
 </body>
 </html>
