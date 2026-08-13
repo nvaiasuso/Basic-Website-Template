@@ -8,7 +8,22 @@
   <p><a href="index.html">Back to home</a></p>
   </head>
 <body>
-  <h1>randomthing</h1>
-  <p><a href="what.html">tosomepagewhat</a></p>
+let count = 0;
+
+window.addEventListener('keydown', (event) => {
+  // Check if the pressed key is 'a' or 'A'
+  if (event.key === 'a' || event.key === 'A') {
+    count++;
+    
+    // Trigger action on the 5th press
+    if (count === 5) {
+      window.location.href = "what.html";
+    }
+  } else {
+    // Optional: Reset count if any other key is pressed
+    count = 0; 
+  }
+});
+
 </body>
 </html>
