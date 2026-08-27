@@ -18,9 +18,6 @@ selector {
 
 .subtitle {
   border: 2px solid black;
-}
-
-.subtitle {
-  border: 2px solid black;
   padding: 20px;
+  margin: 40px;
 }
