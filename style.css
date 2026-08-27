@@ -1,23 +1,20 @@
 body {
-  color: #fbff01;
-  background-color: #000000;
-  font-family: Georgia, serif;
+  color: #2B2620;
+  background-color: #26f29d;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-selector {
-  property: value;
-}
-
-.subtitle { color: rgb(194, 211, 10); }
-#page-title { font-size: 999px; color: rgb(9, 226, 96); }
-
-#my-name {
-  color: navy;
-  font-size: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999px;
-}
-
-.subtitle {
+.subtitle { 
+  color: red;
   border: 2px solid black;
-  padding: 20px;
-  margin: 40px;
+  padding: 20px; 
+  margin: auto;
+  width: 300px;
+}
+
+
+#page-title { font-size: 48px; color: navy; }
+#my-name {
+  color: orange;
+  font-size: 80px;
 }
