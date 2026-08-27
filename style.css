@@ -4,10 +4,23 @@ body {
   font-family: Georgia, serif;
 }
 
+selector {
+  property: value;
+}
+
 .subtitle { color: rgb(194, 211, 10); }
 #page-title { font-size: 999px; color: rgb(9, 226, 96); }
 
 #my-name {
   color: navy;
   font-size: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999px;
+}
+
+.subtitle {
+  border: 2px solid black;
+}
+
+.subtitle {
+  border: 2px solid black;
+  padding: 20px;
 }
