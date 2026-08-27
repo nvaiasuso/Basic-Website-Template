@@ -1,20 +1,20 @@
 body {
   color: #2B2620;
-  background-color: #26f29d;
+  background-color: #151408;
   font-family: 'Times New Roman', Times, serif;
 }
 
 .subtitle { 
-  color: red;
-  border: 2px solid black;
+  color: rgb(15, 139, 104);
+  border: 2px solid #685353;
   padding: 20px; 
   margin: auto;
   width: 300px;
 }
 
 
-#page-title { font-size: 48px; color: navy; }
+#page-title { font-size: 48px; color: rgb(193, 193, 211); }
 #my-name {
-  color: orange;
+  color: rgb(60, 46, 21);
   font-size: 80px;
 }
