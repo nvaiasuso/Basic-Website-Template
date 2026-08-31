@@ -12,8 +12,9 @@
 <body>
 
 
-  <button id="sadbutton" onclick="changeColor()">
-  dont click me pls i have a famaly they will all die. pls :( . 
+  <button id="sadbutton" onclick="changeColor()"
+  id="madbutton" onclick="changeBackground()">
+    dont click me pls i have a famaly they will all die. pls :( . 
 </button>
 
 <script>
@@ -21,6 +22,11 @@
     var myButton = document.getElementById("sadbutton");
     myButton.style.backgroundColor = "red";
   }
+
+  function madbutton() {
+  document.body.style.backgroundColor = "red";
+}
+
 </script>
 
 
