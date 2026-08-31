@@ -6,23 +6,27 @@
   <title>button<title>
 
   <link rel="stylesheet" href="style.css">
+<body>
 
-</head>
+<button id="button" onclick="coler()">
+  aaaaa
+</button>
 
-<button id="sadbutton" onclick="sadandmad()">
-    dont click me pls i have a famaly they will all die. pls :( . 
-  </button>
+<script>
+  function coler() {
+    var myButton = document.getElementById("button");
+    myButton.style.backgroundColor = "red";
+  }
+</script>
 
-  <script>
-    function sadandmad() {
-    
-      var myButton = document.getElementById("sadbutton");
-      myButton.style.backgroundColor = "red";
-      
-  
-      document.body.style.backgroundColor = "darkred";
-    }
-  </script>
+ <script>
+
+function mad() {
+  document.body.style.backgroundColor = "darkred";
+}
+
+</script>
+
 
 <body>
 
