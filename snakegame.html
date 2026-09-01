@@ -1,33 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>snake</title> 
-    <link rel="stylesheet" href="style.css">
-</head> 
+  <title>Snake</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <h1>Snake</h1>
+  <h1>Snake</h1>
   <p><a href="index.html">Back to home</a></p>
-<canvas id="gameCanvas" width="9999" height="9999"></canvas>
+  <canvas id="gameCanvas" width="999" height="999"></canvas>
+ 
   <script>
-     var canvas = document.getElementById("gameCanvas");
-    var ctx = canvas.getContext("2d");
-    var CELL = 20;
-  var snake = { x: 5, y: 5 };
-   ctx.fillStyle = "black";
-    ctx.fillRect(0, 0, 400, 400);
- 
-    ctx.fillStyle = "#0FFF50";
-    ctx.fillRect(snake.x * CELL, snake.y * CELL, CELL, CELL);
 
-     var apple = { x: 12, y: 8 };
- 
-    ctx.fillStyle = "blue";
-    ctx.fillRect(apple.x * CELL, apple.y * CELL, CELL, CELL);
+         var canvas = document.getElementById("gameCanvas");
 
+
+      var ctx = canvas.getContext("2d");
+
+      var CELL = 20;
+
+ 
+       var snake = { x: 32, y: 67 };
+ 
+        ctx.fillStyle = "red";
+       ctx.fillRect(0, 0, 400, 400);
+ 
+       ctx.fillStyle = "darkgreen";
+      ctx.fillRect(snake.x * CELL, snake.y * CELL, CELL, CELL);
+
+          var apple = { x: 34, y: 70 };
 
   </script>
-
-</body> 
+</body>
 </html>
