@@ -7,7 +7,7 @@
 <body>
   <h1>Snake</h1>
   <p><a href="index.html">Back to home</a></p>
-  <canvas id="gameCanvas" width="999" height="999"></canvas>
+  <canvas id="gameCanvas" width="400" height="400"></canvas>
  
   <script>
 
@@ -22,7 +22,7 @@
        var snake = { x: 32, y: 67 };
  
         ctx.fillStyle = "gray";
-       ctx.fillRect(0, 0, 999, 999);
+       ctx.fillRect(0, 0, 400, 400);
  
        ctx.fillStyle = "darkgreen";
       ctx.fillRect(snake.x * CELL, snake.y * CELL, CELL, CELL);
