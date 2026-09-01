@@ -21,13 +21,16 @@
  
        var snake = { x: 32, y: 67 };
  
-        ctx.fillStyle = "red";
-       ctx.fillRect(0, 0, 400, 400);
+        ctx.fillStyle = "gray";
+       ctx.fillRect(0, 0, 999, 999);
  
        ctx.fillStyle = "darkgreen";
       ctx.fillRect(snake.x * CELL, snake.y * CELL, CELL, CELL);
 
           var apple = { x: 34, y: 70 };
+           ctx.fillStyle = "darkred";
+    ctx.fillRect(apple.x * CELL, apple.y * CELL, CELL, CELL);
+
 
   </script>
 </body>
