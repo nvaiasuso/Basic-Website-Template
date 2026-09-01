@@ -15,14 +15,13 @@
     var CELL = 20;
  
     var snake = { x: 5, y: 5 };
+    var apple = { x: 12, y: 8 };
  
     ctx.fillStyle = "black";
     ctx.fillRect(0, 0, 400, 400);
  
     ctx.fillStyle = "lime";
     ctx.fillRect(snake.x * CELL, snake.y * CELL, CELL, CELL);
-
-        var apple = { x: 12, y: 8 };
  
     ctx.fillStyle = "red";
     ctx.fillRect(apple.x * CELL, apple.y * CELL, CELL, CELL);
