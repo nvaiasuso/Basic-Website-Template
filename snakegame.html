@@ -8,23 +8,43 @@
   <h1>Snake</h1>
   <p><a href="index.html">Back to home</a></p>
   <canvas id="gameCanvas" width="400" height="400"></canvas>
- 
+</script>
+
+  <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
+    
   <script>
+      var apple = { x: 12, y: 8 };
     var canvas = document.getElementById("gameCanvas");
     var ctx = canvas.getContext("2d");
     var CELL = 20;
+    var snake = { x: 10, y: 13};
  
-    var snake = { x: 5, y: 5 };
-    var apple = { x: 12, y: 8 };
+   function drawBoard() {
+  ctx.fillStyle = "#1b1b1b";
+  ctx.fillRect(0, 0, 400, 400);
  
-    ctx.fillStyle = "black";
-    ctx.fillRect(0, 0, 400, 400);
+  ctx.fillStyle = "#3ddc84";
+  ctx.fillRect(snake.x, snake.y, 20, 20);
+}
  
-    ctx.fillStyle = "lime";
-    ctx.fillRect(snake.x * CELL, snake.y * CELL, CELL, CELL);
+setInterval(step, 100);
+
+    function step() {
+  snake.x = snake.x + 50;
  
-    ctx.fillStyle = "red";
+  if (snake.x > 380) {
+    snake.x = 0;
+  }
+
+  drawBoard();
+
+       ctx.fillStyle = "red";
     ctx.fillRect(apple.x * CELL, apple.y * CELL, CELL, CELL);
+
+}
+
 
   </script>
 </body>
