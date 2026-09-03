@@ -9,10 +9,6 @@
   <p><a href="index.html">Back to home</a></p>
   <canvas id="gameCanvas" width="400" height="400"></canvas>
 </script>
-
-  <div class="slidecontainer">
-  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-</div>
     
   <script>
       var apple = { x: 12, y: 8 };
@@ -20,6 +16,10 @@
     var ctx = canvas.getContext("2d");
     var CELL = 20;
     var snake = { x: 10, y: 13};
+
+    var dx = 20; // how far snake.x changes each step
+var dy = 0;  // how far snake.y changes each step
+
  
    function drawBoard() {
   ctx.fillStyle = "#1b1b1b";
@@ -31,20 +31,58 @@
  
 setInterval(step, 100);
 
-    function step() {
-  snake.x = snake.x + 50;
- 
-  if (snake.x > 380) {
-    snake.x = 0;
-  }
+function step() {
+  snake.x = snake.x + dx;
+  snake.y = snake.y + dy;
+  drawBoard();
+  
+}
+    
+        document.addEventListener("keydown", function(event) {
+  console.log(event.key);
+});
+
 
   drawBoard();
+    
+document.addEventListener("keydown", function(event) {
 
-       ctx.fillStyle = "red";
+        if (event.key === "ArrowUp") {
+    dx = 0;
+    dy = -20;
+  }
+  if (event.key === "ArrowDown") {
+    dx = 0;
+    dy = 20;
+  }
+  
+  if (event.key === "ArrowRight") {
+    dx = 20;
+    dy = 0;
+  }
+  
+  if (event.key === "ArrowLeft") {
+    dx = -20;
+    dy = 0;
+  }
+});
+
+function step() {
+  snake.x = snake.x + dx;
+  snake.y = snake.y + dy;
+ 
+  if (snake.x > 380) { snake.x = 0; }
+  if (snake.x < 0) { snake.x = 380; }
+  if (snake.y > 380) { snake.y = 0; }
+  if (snake.y < 0) { snake.y = 380; }
+ 
+  drawBoard();
+
+         ctx.fillStyle = "red";
     ctx.fillRect(apple.x * CELL, apple.y * CELL, CELL, CELL);
 
-}
 
+}
 
   </script>
 </body>
